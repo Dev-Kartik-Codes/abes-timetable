@@ -1,0 +1,132 @@
+:root {
+    --background-color: #121212;
+    --card-color: #1e1e1e;
+    --primary-text-color: #ffffff;
+    --secondary-text-color: #b3b3b3;
+    --accent-color: #007bff;
+    --input-bg-color: #2a2a2a;
+    --border-color: #333333;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--background-color);
+    color: var(--primary-text-color);
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin-bottom: 5px;
+}
+
+header p {
+    color: var(--secondary-text-color);
+    font-size: 1.1em;
+}
+
+.input-group, .day-selector-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: var(--secondary-text-color);
+    font-weight: 500;
+}
+
+select {
+    width: 100%;
+    padding: 15px;
+    background-color: var(--input-bg-color);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    color: var(--primary-text-color);
+    font-size: 1em;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    appearance: none;
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23ffffff' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: right 1rem center;
+    background-size: 1em;
+}
+
+#timetable-display {
+    margin-top: 30px;
+}
+
+.hidden {
+    display: none;
+}
+
+.timetable-card {
+    background-color: var(--card-color);
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 15px;
+    border-left: 5px solid;
+    position: relative;
+    overflow: hidden;
+}
+
+.card-time {
+    font-weight: 700;
+    font-size: 1.2em;
+    margin-bottom: 15px;
+}
+
+.no-class {
+    color: var(--secondary-text-color);
+}
+
+.card-details p {
+    margin: 5px 0;
+    line-height: 1.6;
+    word-wrap: break-word;
+}
+
+.card-details strong {
+    color: var(--secondary-text-color);
+    font-weight: 500;
+}
+
+.card-type {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-weight: 500;
+}
+
+.lecture {
+    border-color: #007bff;
+}
+
+.practical {
+    border-color: #28a745;
+}
+
+.tutorial {
+    border-color: #ffc107;
+}
+
+.other {
+    border-color: #6c757d;
+}
+
+h4{
+    text-align: center;
+    color: grey;
+}
